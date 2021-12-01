@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run prettify && nodemon server.js",
+    "prettify": "prettier --print-width 80 --no-semi --single-quote --trailing-comma none --write app/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^18.4.1",
+    "@hapi/inert": "^5.2.0",
+    "@hapi/joi": "^15.0.3",
+    "@hapi/vision": "^5.5.2",
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "glob": "^7.1.6",
+    "hapi-swagger": "^9.4.2",
+    "pg": "^8.0.3",
+    "redis": "^3.0.2",
+    "sequelize": "^5.21.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "^2.0.5"
+  }
+}
